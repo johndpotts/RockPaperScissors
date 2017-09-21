@@ -91,6 +91,7 @@ namespace RockPaperScissors
             {
                 Console.WriteLine("Enter your choice (R)ock, (S)cissors, (P)aper, (Q)uit");
                 string choice = Console.ReadLine();
+                choice = choice.ToUpper();
                 if (choice == "R" || choice == "S" || choice == "P" || choice == "Q")
                 {
                     return choice;
